@@ -13,13 +13,15 @@ const makeMap = (people: Person[]): PersonMap => {
   }, {});
 };
 
-export const extendPeople = (people: Person[]): Person[] => people
-  .map((person) => {
-    const peopleMap = makeMap(people);
+export const extendPeople = (people: Person[]): Person[] => {
+  const peopleMap = makeMap(people);
 
-    return {
-      ...person,
-      mother: person.motherName ? peopleMap[person.motherName] : undefined,
-      father: person.fatherName ? peopleMap[person.fatherName] : undefined,
-    };
-  });
+  return people
+    .map((person) => {
+      return {
+        ...person,
+        mother: person.motherName ? peopleMap[person.motherName] : undefined,
+        father: person.fatherName ? peopleMap[person.fatherName] : undefined,
+      };
+    });
+};

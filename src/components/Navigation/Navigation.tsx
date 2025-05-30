@@ -10,6 +10,10 @@ const navLinks = [
     to: '/people',
     title: 'People',
   },
+  {
+    to: '/avatar',
+    title: 'Avatar',
+  },
 ];
 
 const Navigation = () => (
