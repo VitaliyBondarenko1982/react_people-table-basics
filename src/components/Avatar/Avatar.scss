@@ -1,0 +1,30 @@
+.Avatar{
+    width: 400px;
+    height: 400px;
+    border: 12px solid #3251FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #728BFF;
+
+    &__logo {
+      margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+     font-size: 84px;
+     font-weight: bold;
+     line-height: 1.1;
+     color: white;
+  }
+
+  &__date {
+     color: white;
+     font-size: 48px;
+      line-height: 1.1;
+     font-weight: bold;
+     font-style: italic;
+  }
+}

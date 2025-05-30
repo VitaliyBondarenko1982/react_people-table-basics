@@ -1,7 +1,9 @@
 import './Loader.scss';
 
-export const Loader = () => (
+const Avatar = () => (
   <div className="Loader" data-cy="loader">
     <div className="Loader__content" />
   </div>
 );
+
+export default Avatar;
